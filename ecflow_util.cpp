@@ -1,4 +1,4 @@
-#include "ecflow_client.h"
+#include "ecflow_util.h"
 
 #include <ClientInvoker.hpp>
 #include <Defs.hpp>
@@ -6,9 +6,9 @@
 
 namespace EcflowUtil {
 
-class EcflowClientPrivate {
+class EcflowClientPrivateWrapper {
 public:
-    EcflowClientPrivate(std::string host, std::string port) :
+    EcflowClientPrivateWrapper(std::string host, std::string port) :
         host_{host}, port_{port} {}
 
     int sync() {
@@ -46,21 +46,21 @@ private:
 
     std::string error_message_;
 
-    friend class EcflowClient;
+    friend class EcflowClientWrapper;
 };
 
-EcflowClient::EcflowClient(const std::string &host, const std::string &port) :
+EcflowClientWrapper::EcflowClientWrapper(const std::string &host, const std::string &port) :
     host_{host},
     port_{port},
-    p_{new EcflowClientPrivate{host, port}} {
+    p_{new EcflowClientPrivateWrapper{host, port}} {
 
 }
 
-EcflowClient::~EcflowClient() {
+EcflowClientWrapper::~EcflowClientWrapper() {
     delete p_;
 }
 
-int EcflowClient::sync() {
+int EcflowClientWrapper::sync() {
     auto ret = p_->sync();
     if (ret != 0) {
         return ret;
@@ -69,7 +69,7 @@ int EcflowClient::sync() {
     return 0;
 }
 
-std::string EcflowClient::errorMessage() {
+std::string EcflowClientWrapper::errorMessage() {
     return p_->error_message_;
 }
 

@@ -8,7 +8,7 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: ecflow_client.i
+// source: ecflow_util.i
 
 #define SWIGMODULE ecflow_client
 
@@ -249,7 +249,7 @@ static void* Swig_malloc(int c) {
 }
 
 
-#include "ecflow_client.h"
+#include "ecflow_util.h"
 
 
 #include <vector>
@@ -276,7 +276,7 @@ SWIGINTERN void std_vector_Sl_EcflowUtil_NodeStatusRecord_Sg__set(std::vector< E
 extern "C" {
 #endif
 
-void _wrap_Swig_free_ecflow_client_aca8ad7772ffd0a6(void *_swig_go_0) {
+void _wrap_Swig_free_ecflow_client_149cbf1b1d6d7ca4(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -286,7 +286,7 @@ void _wrap_Swig_free_ecflow_client_aca8ad7772ffd0a6(void *_swig_go_0) {
 }
 
 
-void *_wrap_Swig_malloc_ecflow_client_aca8ad7772ffd0a6(intgo _swig_go_0) {
+void *_wrap_Swig_malloc_ecflow_client_149cbf1b1d6d7ca4(intgo _swig_go_0) {
   int arg1 ;
   void *result = 0 ;
   void *_swig_go_result;
@@ -299,7 +299,7 @@ void *_wrap_Swig_malloc_ecflow_client_aca8ad7772ffd0a6(intgo _swig_go_0) {
 }
 
 
-void _wrap_NodeStatusRecord_path__set_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::NodeStatusRecord *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_NodeStatusRecord_path__set_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::NodeStatusRecord *_swig_go_0, _gostring_ _swig_go_1) {
   EcflowUtil::NodeStatusRecord *arg1 = (EcflowUtil::NodeStatusRecord *) 0 ;
   std::string *arg2 = 0 ;
   
@@ -314,7 +314,7 @@ void _wrap_NodeStatusRecord_path__set_ecflow_client_aca8ad7772ffd0a6(EcflowUtil:
 }
 
 
-_gostring_ _wrap_NodeStatusRecord_path__get_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::NodeStatusRecord *_swig_go_0) {
+_gostring_ _wrap_NodeStatusRecord_path__get_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::NodeStatusRecord *_swig_go_0) {
   EcflowUtil::NodeStatusRecord *arg1 = (EcflowUtil::NodeStatusRecord *) 0 ;
   std::string *result = 0 ;
   _gostring_ _swig_go_result;
@@ -327,7 +327,7 @@ _gostring_ _wrap_NodeStatusRecord_path__get_ecflow_client_aca8ad7772ffd0a6(Ecflo
 }
 
 
-void _wrap_NodeStatusRecord_status__set_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::NodeStatusRecord *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_NodeStatusRecord_status__set_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::NodeStatusRecord *_swig_go_0, _gostring_ _swig_go_1) {
   EcflowUtil::NodeStatusRecord *arg1 = (EcflowUtil::NodeStatusRecord *) 0 ;
   std::string *arg2 = 0 ;
   
@@ -342,7 +342,7 @@ void _wrap_NodeStatusRecord_status__set_ecflow_client_aca8ad7772ffd0a6(EcflowUti
 }
 
 
-_gostring_ _wrap_NodeStatusRecord_status__get_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::NodeStatusRecord *_swig_go_0) {
+_gostring_ _wrap_NodeStatusRecord_status__get_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::NodeStatusRecord *_swig_go_0) {
   EcflowUtil::NodeStatusRecord *arg1 = (EcflowUtil::NodeStatusRecord *) 0 ;
   std::string *result = 0 ;
   _gostring_ _swig_go_result;
@@ -355,7 +355,7 @@ _gostring_ _wrap_NodeStatusRecord_status__get_ecflow_client_aca8ad7772ffd0a6(Ecf
 }
 
 
-EcflowUtil::NodeStatusRecord *_wrap_new_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6() {
+EcflowUtil::NodeStatusRecord *_wrap_new_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4() {
   EcflowUtil::NodeStatusRecord *result = 0 ;
   EcflowUtil::NodeStatusRecord *_swig_go_result;
   
@@ -366,7 +366,7 @@ EcflowUtil::NodeStatusRecord *_wrap_new_NodeStatusRecord_ecflow_client_aca8ad777
 }
 
 
-void _wrap_delete_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::NodeStatusRecord *_swig_go_0) {
+void _wrap_delete_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::NodeStatusRecord *_swig_go_0) {
   EcflowUtil::NodeStatusRecord *arg1 = (EcflowUtil::NodeStatusRecord *) 0 ;
   
   arg1 = *(EcflowUtil::NodeStatusRecord **)&_swig_go_0; 
@@ -376,11 +376,11 @@ void _wrap_delete_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::No
 }
 
 
-EcflowUtil::EcflowClient *_wrap_new_EcflowClient_ecflow_client_aca8ad7772ffd0a6(_gostring_ _swig_go_0, _gostring_ _swig_go_1) {
+EcflowUtil::EcflowClientWrapper *_wrap_new_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(_gostring_ _swig_go_0, _gostring_ _swig_go_1) {
   std::string *arg1 = 0 ;
   std::string *arg2 = 0 ;
-  EcflowUtil::EcflowClient *result = 0 ;
-  EcflowUtil::EcflowClient *_swig_go_result;
+  EcflowUtil::EcflowClientWrapper *result = 0 ;
+  EcflowUtil::EcflowClientWrapper *_swig_go_result;
   
   
   std::string arg1_str(_swig_go_0.p, _swig_go_0.n);
@@ -391,28 +391,28 @@ EcflowUtil::EcflowClient *_wrap_new_EcflowClient_ecflow_client_aca8ad7772ffd0a6(
   arg2 = &arg2_str;
   
   
-  result = (EcflowUtil::EcflowClient *)new EcflowUtil::EcflowClient((std::string const &)*arg1,(std::string const &)*arg2);
-  *(EcflowUtil::EcflowClient **)&_swig_go_result = (EcflowUtil::EcflowClient *)result; 
+  result = (EcflowUtil::EcflowClientWrapper *)new EcflowUtil::EcflowClientWrapper((std::string const &)*arg1,(std::string const &)*arg2);
+  *(EcflowUtil::EcflowClientWrapper **)&_swig_go_result = (EcflowUtil::EcflowClientWrapper *)result; 
   return _swig_go_result;
 }
 
 
-void _wrap_delete_EcflowClient_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::EcflowClient *_swig_go_0) {
-  EcflowUtil::EcflowClient *arg1 = (EcflowUtil::EcflowClient *) 0 ;
+void _wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
+  EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
   
-  arg1 = *(EcflowUtil::EcflowClient **)&_swig_go_0; 
+  arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
   
   delete arg1;
   
 }
 
 
-intgo _wrap_EcflowClient_sync_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::EcflowClient *_swig_go_0) {
-  EcflowUtil::EcflowClient *arg1 = (EcflowUtil::EcflowClient *) 0 ;
+intgo _wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
+  EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
   int result;
   intgo _swig_go_result;
   
-  arg1 = *(EcflowUtil::EcflowClient **)&_swig_go_0; 
+  arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
   
   result = (int)(arg1)->sync();
   _swig_go_result = result; 
@@ -420,12 +420,12 @@ intgo _wrap_EcflowClient_sync_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::EcflowC
 }
 
 
-std::vector< EcflowUtil::NodeStatusRecord > *_wrap_EcflowClient_statusRecords_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::EcflowClient *_swig_go_0) {
-  EcflowUtil::EcflowClient *arg1 = (EcflowUtil::EcflowClient *) 0 ;
+std::vector< EcflowUtil::NodeStatusRecord > *_wrap_EcflowClientWrapper_statusRecords_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
+  EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
   std::vector< EcflowUtil::NodeStatusRecord > result;
   std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_result;
   
-  arg1 = *(EcflowUtil::EcflowClient **)&_swig_go_0; 
+  arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
   
   result = (arg1)->statusRecords();
   *(std::vector< EcflowUtil::NodeStatusRecord > **)&_swig_go_result = new std::vector< EcflowUtil::NodeStatusRecord >(result); 
@@ -433,12 +433,12 @@ std::vector< EcflowUtil::NodeStatusRecord > *_wrap_EcflowClient_statusRecords_ec
 }
 
 
-_gostring_ _wrap_EcflowClient_errorMessage_ecflow_client_aca8ad7772ffd0a6(EcflowUtil::EcflowClient *_swig_go_0) {
-  EcflowUtil::EcflowClient *arg1 = (EcflowUtil::EcflowClient *) 0 ;
+_gostring_ _wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
+  EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
   std::string result;
   _gostring_ _swig_go_result;
   
-  arg1 = *(EcflowUtil::EcflowClient **)&_swig_go_0; 
+  arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
   
   result = (arg1)->errorMessage();
   _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
@@ -446,7 +446,7 @@ _gostring_ _wrap_EcflowClient_errorMessage_ecflow_client_aca8ad7772ffd0a6(Ecflow
 }
 
 
-std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_aca8ad7772ffd0a6() {
+std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_149cbf1b1d6d7ca4() {
   std::vector< EcflowUtil::NodeStatusRecord > *result = 0 ;
   std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_result;
   
@@ -457,7 +457,7 @@ std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__S
 }
 
 
-std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_aca8ad7772ffd0a6(long long _swig_go_0) {
+std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(long long _swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord >::size_type arg1 ;
   std::vector< EcflowUtil::NodeStatusRecord > *result = 0 ;
   std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_result;
@@ -470,7 +470,7 @@ std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__S
 }
 
 
-std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = 0 ;
   std::vector< EcflowUtil::NodeStatusRecord > *result = 0 ;
   std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_result;
@@ -483,7 +483,7 @@ std::vector< EcflowUtil::NodeStatusRecord > *_wrap_new_NodeStatusRecordVector__S
 }
 
 
-long long _wrap_NodeStatusRecordVector_size_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+long long _wrap_NodeStatusRecordVector_size_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   std::vector< EcflowUtil::NodeStatusRecord >::size_type result;
   long long _swig_go_result;
@@ -496,7 +496,7 @@ long long _wrap_NodeStatusRecordVector_size_ecflow_client_aca8ad7772ffd0a6(std::
 }
 
 
-long long _wrap_NodeStatusRecordVector_capacity_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+long long _wrap_NodeStatusRecordVector_capacity_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   std::vector< EcflowUtil::NodeStatusRecord >::size_type result;
   long long _swig_go_result;
@@ -509,7 +509,7 @@ long long _wrap_NodeStatusRecordVector_capacity_ecflow_client_aca8ad7772ffd0a6(s
 }
 
 
-void _wrap_NodeStatusRecordVector_reserve_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, long long _swig_go_1) {
+void _wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, long long _swig_go_1) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   std::vector< EcflowUtil::NodeStatusRecord >::size_type arg2 ;
   
@@ -521,7 +521,7 @@ void _wrap_NodeStatusRecordVector_reserve_ecflow_client_aca8ad7772ffd0a6(std::ve
 }
 
 
-bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -534,7 +534,7 @@ bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_aca8ad7772ffd0a6(std::ve
 }
 
 
-void _wrap_NodeStatusRecordVector_clear_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+void _wrap_NodeStatusRecordVector_clear_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   
   arg1 = *(std::vector< EcflowUtil::NodeStatusRecord > **)&_swig_go_0; 
@@ -544,7 +544,7 @@ void _wrap_NodeStatusRecordVector_clear_ecflow_client_aca8ad7772ffd0a6(std::vect
 }
 
 
-void _wrap_NodeStatusRecordVector_add_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, EcflowUtil::NodeStatusRecord *_swig_go_1) {
+void _wrap_NodeStatusRecordVector_add_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, EcflowUtil::NodeStatusRecord *_swig_go_1) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   std::vector< EcflowUtil::NodeStatusRecord >::value_type *arg2 = 0 ;
   
@@ -556,7 +556,7 @@ void _wrap_NodeStatusRecordVector_add_ecflow_client_aca8ad7772ffd0a6(std::vector
 }
 
 
-EcflowUtil::NodeStatusRecord *_wrap_NodeStatusRecordVector_get_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, intgo _swig_go_1) {
+EcflowUtil::NodeStatusRecord *_wrap_NodeStatusRecordVector_get_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, intgo _swig_go_1) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   int arg2 ;
   std::vector< EcflowUtil::NodeStatusRecord >::value_type *result = 0 ;
@@ -577,7 +577,7 @@ EcflowUtil::NodeStatusRecord *_wrap_NodeStatusRecordVector_get_ecflow_client_aca
 }
 
 
-void _wrap_NodeStatusRecordVector_set_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, intgo _swig_go_1, EcflowUtil::NodeStatusRecord *_swig_go_2) {
+void _wrap_NodeStatusRecordVector_set_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0, intgo _swig_go_1, EcflowUtil::NodeStatusRecord *_swig_go_2) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   int arg2 ;
   std::vector< EcflowUtil::NodeStatusRecord >::value_type *arg3 = 0 ;
@@ -597,7 +597,7 @@ void _wrap_NodeStatusRecordVector_set_ecflow_client_aca8ad7772ffd0a6(std::vector
 }
 
 
-void _wrap_delete_NodeStatusRecordVector_ecflow_client_aca8ad7772ffd0a6(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
+void _wrap_delete_NodeStatusRecordVector_ecflow_client_149cbf1b1d6d7ca4(std::vector< EcflowUtil::NodeStatusRecord > *_swig_go_0) {
   std::vector< EcflowUtil::NodeStatusRecord > *arg1 = (std::vector< EcflowUtil::NodeStatusRecord > *) 0 ;
   
   arg1 = *(std::vector< EcflowUtil::NodeStatusRecord > **)&_swig_go_0; 

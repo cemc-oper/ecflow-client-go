@@ -8,7 +8,7 @@
  * interface file instead.
  * ----------------------------------------------------------------------------- */
 
-// source: ecflow_client.i
+// source: ecflow_util.i
 
 package ecflow_client
 
@@ -39,31 +39,31 @@ typedef long long swig_type_8;
 typedef long long swig_type_9;
 typedef long long swig_type_10;
 typedef long long swig_type_11;
-extern void _wrap_Swig_free_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern uintptr_t _wrap_Swig_malloc_ecflow_client_aca8ad7772ffd0a6(swig_intgo arg1);
-extern void _wrap_NodeStatusRecord_path__set_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, swig_type_1 arg2);
-extern swig_type_2 _wrap_NodeStatusRecord_path__get_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern void _wrap_NodeStatusRecord_status__set_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, swig_type_3 arg2);
-extern swig_type_4 _wrap_NodeStatusRecord_status__get_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern uintptr_t _wrap_new_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6(void);
-extern void _wrap_delete_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern uintptr_t _wrap_new_EcflowClient_ecflow_client_aca8ad7772ffd0a6(swig_type_5 arg1, swig_type_6 arg2);
-extern void _wrap_delete_EcflowClient_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern swig_intgo _wrap_EcflowClient_sync_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern uintptr_t _wrap_EcflowClient_statusRecords_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern swig_type_7 _wrap_EcflowClient_errorMessage_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_aca8ad7772ffd0a6(void);
-extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_aca8ad7772ffd0a6(swig_type_8 arg1);
-extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern swig_type_9 _wrap_NodeStatusRecordVector_size_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern swig_type_10 _wrap_NodeStatusRecordVector_capacity_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern void _wrap_NodeStatusRecordVector_reserve_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, swig_type_11 arg2);
-extern _Bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern void _wrap_NodeStatusRecordVector_clear_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
-extern void _wrap_NodeStatusRecordVector_add_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, uintptr_t arg2);
-extern uintptr_t _wrap_NodeStatusRecordVector_get_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, swig_intgo arg2);
-extern void _wrap_NodeStatusRecordVector_set_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1, swig_intgo arg2, uintptr_t arg3);
-extern void _wrap_delete_NodeStatusRecordVector_ecflow_client_aca8ad7772ffd0a6(uintptr_t arg1);
+extern void _wrap_Swig_free_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern uintptr_t _wrap_Swig_malloc_ecflow_client_149cbf1b1d6d7ca4(swig_intgo arg1);
+extern void _wrap_NodeStatusRecord_path__set_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_1 arg2);
+extern swig_type_2 _wrap_NodeStatusRecord_path__get_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_NodeStatusRecord_status__set_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_3 arg2);
+extern swig_type_4 _wrap_NodeStatusRecord_status__get_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern uintptr_t _wrap_new_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(void);
+extern void _wrap_delete_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern uintptr_t _wrap_new_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(swig_type_5 arg1, swig_type_6 arg2);
+extern void _wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_intgo _wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern uintptr_t _wrap_EcflowClientWrapper_statusRecords_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_7 _wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_149cbf1b1d6d7ca4(void);
+extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(swig_type_8 arg1);
+extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_9 _wrap_NodeStatusRecordVector_size_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_10 _wrap_NodeStatusRecordVector_capacity_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_11 arg2);
+extern _Bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_NodeStatusRecordVector_clear_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_NodeStatusRecordVector_add_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, uintptr_t arg2);
+extern uintptr_t _wrap_NodeStatusRecordVector_get_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_intgo arg2);
+extern void _wrap_NodeStatusRecordVector_set_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_intgo arg2, uintptr_t arg3);
+extern void _wrap_delete_NodeStatusRecordVector_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 #undef intgo
 */
 import "C"
@@ -96,13 +96,13 @@ func swigCopyString(s string) string {
 
 func Swig_free(arg1 uintptr) {
 	_swig_i_0 := arg1
-	C._wrap_Swig_free_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	C._wrap_Swig_free_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
 func Swig_malloc(arg1 int) (_swig_ret uintptr) {
 	var swig_r uintptr
 	_swig_i_0 := arg1
-	swig_r = (uintptr)(C._wrap_Swig_malloc_ecflow_client_aca8ad7772ffd0a6(C.swig_intgo(_swig_i_0)))
+	swig_r = (uintptr)(C._wrap_Swig_malloc_ecflow_client_149cbf1b1d6d7ca4(C.swig_intgo(_swig_i_0)))
 	return swig_r
 }
 
@@ -118,7 +118,7 @@ func (p SwigcptrNodeStatusRecord) SwigIsNodeStatusRecord() {
 func (arg1 SwigcptrNodeStatusRecord) SetPath_(arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_NodeStatusRecord_path__set_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), *(*C.swig_type_1)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_NodeStatusRecord_path__set_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), *(*C.swig_type_1)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -127,7 +127,7 @@ func (arg1 SwigcptrNodeStatusRecord) SetPath_(arg2 string) {
 func (arg1 SwigcptrNodeStatusRecord) GetPath_() (_swig_ret string) {
 	var swig_r string
 	_swig_i_0 := arg1
-	swig_r_p := C._wrap_NodeStatusRecord_path__get_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	swig_r_p := C._wrap_NodeStatusRecord_path__get_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
 	var swig_r_1 string
 	swig_r_1 = swigCopyString(swig_r)
@@ -137,7 +137,7 @@ func (arg1 SwigcptrNodeStatusRecord) GetPath_() (_swig_ret string) {
 func (arg1 SwigcptrNodeStatusRecord) SetStatus_(arg2 string) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_NodeStatusRecord_status__set_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), *(*C.swig_type_3)(unsafe.Pointer(&_swig_i_1)))
+	C._wrap_NodeStatusRecord_status__set_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), *(*C.swig_type_3)(unsafe.Pointer(&_swig_i_1)))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg2
 	}
@@ -146,7 +146,7 @@ func (arg1 SwigcptrNodeStatusRecord) SetStatus_(arg2 string) {
 func (arg1 SwigcptrNodeStatusRecord) GetStatus_() (_swig_ret string) {
 	var swig_r string
 	_swig_i_0 := arg1
-	swig_r_p := C._wrap_NodeStatusRecord_status__get_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	swig_r_p := C._wrap_NodeStatusRecord_status__get_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
 	var swig_r_1 string
 	swig_r_1 = swigCopyString(swig_r)
@@ -155,13 +155,13 @@ func (arg1 SwigcptrNodeStatusRecord) GetStatus_() (_swig_ret string) {
 
 func NewNodeStatusRecord() (_swig_ret NodeStatusRecord) {
 	var swig_r NodeStatusRecord
-	swig_r = (NodeStatusRecord)(SwigcptrNodeStatusRecord(C._wrap_new_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6()))
+	swig_r = (NodeStatusRecord)(SwigcptrNodeStatusRecord(C._wrap_new_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4()))
 	return swig_r
 }
 
 func DeleteNodeStatusRecord(arg1 NodeStatusRecord) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_NodeStatusRecord_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
 type NodeStatusRecord interface {
@@ -173,20 +173,20 @@ type NodeStatusRecord interface {
 	GetStatus_() (_swig_ret string)
 }
 
-type SwigcptrEcflowClient uintptr
+type SwigcptrEcflowClientWrapper uintptr
 
-func (p SwigcptrEcflowClient) Swigcptr() uintptr {
+func (p SwigcptrEcflowClientWrapper) Swigcptr() uintptr {
 	return (uintptr)(p)
 }
 
-func (p SwigcptrEcflowClient) SwigIsEcflowClient() {
+func (p SwigcptrEcflowClientWrapper) SwigIsEcflowClientWrapper() {
 }
 
-func NewEcflowClient(arg1 string, arg2 string) (_swig_ret EcflowClient) {
-	var swig_r EcflowClient
+func NewEcflowClientWrapper(arg1 string, arg2 string) (_swig_ret EcflowClientWrapper) {
+	var swig_r EcflowClientWrapper
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (EcflowClient)(SwigcptrEcflowClient(C._wrap_new_EcflowClient_ecflow_client_aca8ad7772ffd0a6(*(*C.swig_type_5)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_6)(unsafe.Pointer(&_swig_i_1)))))
+	swig_r = (EcflowClientWrapper)(SwigcptrEcflowClientWrapper(C._wrap_new_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(*(*C.swig_type_5)(unsafe.Pointer(&_swig_i_0)), *(*C.swig_type_6)(unsafe.Pointer(&_swig_i_1)))))
 	if Swig_escape_always_false {
 		Swig_escape_val = arg1
 	}
@@ -196,38 +196,38 @@ func NewEcflowClient(arg1 string, arg2 string) (_swig_ret EcflowClient) {
 	return swig_r
 }
 
-func DeleteEcflowClient(arg1 EcflowClient) {
+func DeleteEcflowClientWrapper(arg1 EcflowClientWrapper) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_EcflowClient_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
-func (arg1 SwigcptrEcflowClient) Sync() (_swig_ret int) {
+func (arg1 SwigcptrEcflowClientWrapper) Sync() (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
-	swig_r = (int)(C._wrap_EcflowClient_sync_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0)))
+	swig_r = (int)(C._wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0)))
 	return swig_r
 }
 
-func (arg1 SwigcptrEcflowClient) StatusRecords() (_swig_ret NodeStatusRecordVector) {
+func (arg1 SwigcptrEcflowClientWrapper) StatusRecords() (_swig_ret NodeStatusRecordVector) {
 	var swig_r NodeStatusRecordVector
 	_swig_i_0 := arg1
-	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_EcflowClient_statusRecords_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))))
+	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_EcflowClientWrapper_statusRecords_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))))
 	return swig_r
 }
 
-func (arg1 SwigcptrEcflowClient) ErrorMessage() (_swig_ret string) {
+func (arg1 SwigcptrEcflowClientWrapper) ErrorMessage() (_swig_ret string) {
 	var swig_r string
 	_swig_i_0 := arg1
-	swig_r_p := C._wrap_EcflowClient_errorMessage_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	swig_r_p := C._wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
 	var swig_r_1 string
 	swig_r_1 = swigCopyString(swig_r)
 	return swig_r_1
 }
 
-type EcflowClient interface {
+type EcflowClientWrapper interface {
 	Swigcptr() uintptr
-	SwigIsEcflowClient()
+	SwigIsEcflowClientWrapper()
 	Sync() (_swig_ret int)
 	StatusRecords() (_swig_ret NodeStatusRecordVector)
 	ErrorMessage() (_swig_ret string)
@@ -244,21 +244,21 @@ func (p SwigcptrNodeStatusRecordVector) SwigIsNodeStatusRecordVector() {
 
 func NewNodeStatusRecordVector__SWIG_0() (_swig_ret NodeStatusRecordVector) {
 	var swig_r NodeStatusRecordVector
-	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_aca8ad7772ffd0a6()))
+	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_149cbf1b1d6d7ca4()))
 	return swig_r
 }
 
 func NewNodeStatusRecordVector__SWIG_1(arg1 int64) (_swig_ret NodeStatusRecordVector) {
 	var swig_r NodeStatusRecordVector
 	_swig_i_0 := arg1
-	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_aca8ad7772ffd0a6(C.swig_type_8(_swig_i_0))))
+	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(C.swig_type_8(_swig_i_0))))
 	return swig_r
 }
 
 func NewNodeStatusRecordVector__SWIG_2(arg1 NodeStatusRecordVector) (_swig_ret NodeStatusRecordVector) {
 	var swig_r NodeStatusRecordVector
 	_swig_i_0 := arg1.Swigcptr()
-	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))))
+	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))))
 	return swig_r
 }
 
@@ -283,46 +283,46 @@ check_2:
 func (arg1 SwigcptrNodeStatusRecordVector) Size() (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_NodeStatusRecordVector_size_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0)))
+	swig_r = (int64)(C._wrap_NodeStatusRecordVector_size_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0)))
 	return swig_r
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) Capacity() (_swig_ret int64) {
 	var swig_r int64
 	_swig_i_0 := arg1
-	swig_r = (int64)(C._wrap_NodeStatusRecordVector_capacity_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0)))
+	swig_r = (int64)(C._wrap_NodeStatusRecordVector_capacity_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0)))
 	return swig_r
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) Reserve(arg2 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_NodeStatusRecordVector_reserve_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), C.swig_type_11(_swig_i_1))
+	C._wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_type_11(_swig_i_1))
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) IsEmpty() (_swig_ret bool) {
 	var swig_r bool
 	_swig_i_0 := arg1
-	swig_r = (bool)(C._wrap_NodeStatusRecordVector_isEmpty_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0)))
+	swig_r = (bool)(C._wrap_NodeStatusRecordVector_isEmpty_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0)))
 	return swig_r
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) Clear() {
 	_swig_i_0 := arg1
-	C._wrap_NodeStatusRecordVector_clear_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	C._wrap_NodeStatusRecordVector_clear_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) Add(arg2 NodeStatusRecord) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2.Swigcptr()
-	C._wrap_NodeStatusRecordVector_add_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), C.uintptr_t(_swig_i_1))
+	C._wrap_NodeStatusRecordVector_add_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.uintptr_t(_swig_i_1))
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) Get(arg2 int) (_swig_ret NodeStatusRecord) {
 	var swig_r NodeStatusRecord
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	swig_r = (NodeStatusRecord)(SwigcptrNodeStatusRecord(C._wrap_NodeStatusRecordVector_get_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))))
+	swig_r = (NodeStatusRecord)(SwigcptrNodeStatusRecord(C._wrap_NodeStatusRecordVector_get_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))))
 	return swig_r
 }
 
@@ -330,12 +330,12 @@ func (arg1 SwigcptrNodeStatusRecordVector) Set(arg2 int, arg3 NodeStatusRecord) 
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
 	_swig_i_2 := arg3.Swigcptr()
-	C._wrap_NodeStatusRecordVector_set_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.uintptr_t(_swig_i_2))
+	C._wrap_NodeStatusRecordVector_set_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1), C.uintptr_t(_swig_i_2))
 }
 
 func DeleteNodeStatusRecordVector(arg1 NodeStatusRecordVector) {
 	_swig_i_0 := arg1.Swigcptr()
-	C._wrap_delete_NodeStatusRecordVector_ecflow_client_aca8ad7772ffd0a6(C.uintptr_t(_swig_i_0))
+	C._wrap_delete_NodeStatusRecordVector_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
 type NodeStatusRecordVector interface {

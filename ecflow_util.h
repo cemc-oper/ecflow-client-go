@@ -10,15 +10,15 @@ struct NodeStatusRecord {
     std::string status_;
 };
 
-class EcflowClientPrivate;
+class EcflowClientWrapperPrivate;
 
-class EcflowClient {
+class EcflowClientWrapper {
 public:
-    EcflowClient() = delete;
+    EcflowClientWrapper() = delete;
 
-    EcflowClient(const std::string &host, const std::string &port);
+    EcflowClientWrapper(const std::string &host, const std::string &port);
 
-    ~EcflowClient();
+    ~EcflowClientWrapper();
 
     int sync();
 
@@ -32,7 +32,7 @@ private:
     std::string host_;
     std::string port_;
 
-    EcflowClientPrivate* p_;
+    EcflowClientWrapperPrivate* p_;
     std::vector<NodeStatusRecord> status_records_;
 };
 

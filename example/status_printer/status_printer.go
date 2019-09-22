@@ -9,7 +9,7 @@ import (
 func main() {
 	// client := NewEcflowClient("10.40.143.18", "31071")
 	//client := NewEcflowClient("10.40.143.16", "31067")
-	client := ecflow_client.NewEcflowClient("10.40.143.18", "31067")
+	client := ecflow_client.NewEcflowClientWrapper("10.40.143.18", "31067")
 
 	ret := client.Sync()
 	if ret != 0 {
