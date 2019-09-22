@@ -1,15 +1,18 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/perillaroc/ecflow-client-go"
 	"log"
 )
 
 func main() {
-	// client := NewEcflowClient("10.40.143.18", "31071")
-	//client := NewEcflowClient("10.40.143.16", "31067")
-	client := ecflow_client.NewEcflowClientWrapper("10.40.143.18", "31067")
+	ecflowHost := flag.String("host", "localhost", "ecflow server host")
+	ecflowPort := flag.String("port", "3141", "ecflow server port")
+	flag.Parse()
+
+	client := ecflow_client.NewEcflowClientWrapper(*ecflowHost, *ecflowPort)
 
 	ret := client.Sync()
 	if ret != 0 {
