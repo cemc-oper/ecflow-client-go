@@ -16,6 +16,24 @@ export BOOST_LIB_DIR=/some/path/to/boost/stage/lib
 
 ## Getting Started
 
+```go
+ecflowHost := "some host"
+ecflowPort := "some port"
+
+client := ecflow_client.CreateEcflowClient(ecflowHost, ecflowPort)
+defer client.Close()
+
+ret := client.Sync()
+if ret != 0 {
+	log.Fatal("sync has error")
+}
+
+records := client.StatusRecords()
+for _, record := range records {
+	fmt.Printf("%s: [%s]\n", record.Path, record.Status)
+}
+```
+
 ## License
 
 Copyright 2019, perillaroc.
