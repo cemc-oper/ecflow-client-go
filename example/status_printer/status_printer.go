@@ -12,8 +12,8 @@ func main() {
 	ecflowPort := flag.String("port", "3141", "ecflow server port")
 	flag.Parse()
 
-	client := ecflow_client.NewEcflowClientWrapper(*ecflowHost, *ecflowPort)
-	defer ecflow_client.DeleteEcflowClientWrapper(client)
+	client := ecflow_client.CreateEcflowClient(*ecflowHost, *ecflowPort)
+	defer client.Close()
 
 	ret := client.Sync()
 	if ret != 0 {
@@ -21,10 +21,8 @@ func main() {
 	}
 
 	records := client.StatusRecords()
-	count := int(records.Size())
-	for i := 0; i < count; i++ {
-		record := records.Get(i)
-		fmt.Printf("%s: [%s]\n", record.GetPath_(), record.GetStatus_())
+	for _, record := range records {
+		fmt.Printf("%s: [%s]\n", record.Path, record.Status)
 	}
-	fmt.Printf("%d nodes\n", count)
+	fmt.Printf("%d nodes\n", len(records))
 }
