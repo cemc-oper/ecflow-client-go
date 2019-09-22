@@ -13,6 +13,7 @@ func main() {
 	flag.Parse()
 
 	client := ecflow_client.NewEcflowClientWrapper(*ecflowHost, *ecflowPort)
+	defer ecflow_client.DeleteEcflowClientWrapper(client)
 
 	ret := client.Sync()
 	if ret != 0 {
