@@ -6,9 +6,9 @@
 
 namespace EcflowUtil {
 
-class EcflowClientPrivateWrapper {
+class EcflowClientWrapperPrivate {
 public:
-    EcflowClientPrivateWrapper(std::string host, std::string port) :
+    EcflowClientWrapperPrivate(std::string host, std::string port) :
         host_{host}, port_{port} {}
 
     int sync() {
@@ -52,7 +52,7 @@ private:
 EcflowClientWrapper::EcflowClientWrapper(const std::string &host, const std::string &port) :
     host_{host},
     port_{port},
-    p_{new EcflowClientPrivateWrapper{host, port}} {
+    p_{new EcflowClientWrapperPrivate{host, port}} {
 
 }
 
