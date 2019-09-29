@@ -1,9 +1,12 @@
 package ecflow_client
 
+import "time"
+
 type EcflowClient struct {
-	ServerHost string
-	ServerPort string
-	wrapper    EcflowClientWrapper
+	ServerHost    string
+	ServerPort    string
+	CollectedTime time.Time
+	wrapper       EcflowClientWrapper
 }
 
 type StatusRecord struct {
@@ -24,7 +27,9 @@ func (c *EcflowClient) Sync() int {
 	if c.wrapper == nil {
 		c.wrapper = NewEcflowClientWrapper(c.ServerHost, c.ServerPort)
 	}
-	return c.wrapper.Sync()
+	errorCode := c.wrapper.Sync()
+	c.CollectedTime = time.Now()
+	return errorCode
 }
 
 func (c *EcflowClient) StatusRecords() []StatusRecord {
