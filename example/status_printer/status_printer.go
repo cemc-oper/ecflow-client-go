@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"github.com/perillaroc/ecflow-client-go"
@@ -33,7 +34,11 @@ func main() {
 
 	records := client.StatusRecords()
 	for _, record := range records {
-		fmt.Fprintf(target, "%s: [%s]\n", record.Path, record.Status)
+		b, err := json.Marshal(record)
+		if err != nil {
+			continue
+		}
+		fmt.Fprintf(target, "%s\n", b)
 	}
 	fmt.Fprintf(target, "%d nodes\n", len(records))
 }

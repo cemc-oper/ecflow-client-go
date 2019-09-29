@@ -10,8 +10,8 @@ type EcflowClient struct {
 }
 
 type StatusRecord struct {
-	Path   string
-	Status string
+	Path   string `json:"path"`
+	Status string `json:"status"`
 }
 
 func CreateEcflowClient(host string, port string) *EcflowClient {
