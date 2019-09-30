@@ -15,10 +15,10 @@ class EcflowClientWrapperPrivate;
 class EcflowClientWrapper {
 public:
     EcflowClientWrapper() = delete;
-
     EcflowClientWrapper(const std::string &host, const std::string &port);
-
     ~EcflowClientWrapper();
+
+    void setConnectTimeout(int time_out);
 
     int sync();
 

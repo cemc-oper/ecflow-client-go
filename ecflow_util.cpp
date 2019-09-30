@@ -11,6 +11,10 @@ public:
     EcflowClientWrapperPrivate(std::string host, std::string port) :
         host_{host}, port_{port} {}
 
+    void setConnectTimeout(int time_out) {
+        invoker_.set_connect_timeout(time_out);
+    }
+
     int sync() {
         invoker_.set_host_port(host_, port_);
         auto sync_result = invoker_.sync_local();
@@ -58,6 +62,10 @@ EcflowClientWrapper::EcflowClientWrapper(const std::string &host, const std::str
 
 EcflowClientWrapper::~EcflowClientWrapper() {
     delete p_;
+}
+
+void EcflowClientWrapper::setConnectTimeout(int time_out) {
+    p_->setConnectTimeout(time_out);
 }
 
 int EcflowClientWrapper::sync() {

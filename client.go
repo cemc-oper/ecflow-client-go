@@ -23,6 +23,10 @@ func CreateEcflowClient(host string, port string) *EcflowClient {
 	return client
 }
 
+func (c *EcflowClient) SetConnectTimeout(timeout int) {
+	c.wrapper.SetConnectTimeout(timeout)
+}
+
 func (c *EcflowClient) Sync() int {
 	if c.wrapper == nil {
 		c.wrapper = NewEcflowClientWrapper(c.ServerHost, c.ServerPort)

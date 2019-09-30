@@ -49,6 +49,7 @@ extern uintptr_t _wrap_new_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(void)
 extern void _wrap_delete_NodeStatusRecord_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern uintptr_t _wrap_new_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(swig_type_5 arg1, swig_type_6 arg2);
 extern void _wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_EcflowClientWrapper_setConnectTimeout_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_intgo arg2);
 extern swig_intgo _wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern uintptr_t _wrap_EcflowClientWrapper_statusRecords_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern swig_type_7 _wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
@@ -201,6 +202,12 @@ func DeleteEcflowClientWrapper(arg1 EcflowClientWrapper) {
 	C._wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
 }
 
+func (arg1 SwigcptrEcflowClientWrapper) SetConnectTimeout(arg2 int) {
+	_swig_i_0 := arg1
+	_swig_i_1 := arg2
+	C._wrap_EcflowClientWrapper_setConnectTimeout_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_intgo(_swig_i_1))
+}
+
 func (arg1 SwigcptrEcflowClientWrapper) Sync() (_swig_ret int) {
 	var swig_r int
 	_swig_i_0 := arg1
@@ -228,6 +235,7 @@ func (arg1 SwigcptrEcflowClientWrapper) ErrorMessage() (_swig_ret string) {
 type EcflowClientWrapper interface {
 	Swigcptr() uintptr
 	SwigIsEcflowClientWrapper()
+	SetConnectTimeout(arg2 int)
 	Sync() (_swig_ret int)
 	StatusRecords() (_swig_ret NodeStatusRecordVector)
 	ErrorMessage() (_swig_ret string)

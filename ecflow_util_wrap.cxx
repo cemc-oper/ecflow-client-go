@@ -407,6 +407,18 @@ void _wrap_delete_EcflowClientWrapper_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil:
 }
 
 
+void _wrap_EcflowClientWrapper_setConnectTimeout_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0, intgo _swig_go_1) {
+  EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
+  int arg2 ;
+  
+  arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
+  arg2 = (int)_swig_go_1; 
+  
+  (arg1)->setConnectTimeout(arg2);
+  
+}
+
+
 intgo _wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
   EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
   int result;

@@ -42,3 +42,6 @@ build:
 
 example:
 	$(MAKE) -C example
+
+swig:
+	swig -go -cgo -c++ -intgosize 64 ecflow_util.i
