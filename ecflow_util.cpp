@@ -32,6 +32,11 @@ public:
 
         std::vector<NodeStatusRecord> records;
 
+        NodeStatusRecord record;
+        record.path_ = "/";
+        record.status_ = NState::toString(defs_->state());
+        records.push_back(record);
+
         for (auto &node: nodes) {
             NodeStatusRecord record;
             record.path_ = node->absNodePath();
