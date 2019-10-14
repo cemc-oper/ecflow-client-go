@@ -9,7 +9,9 @@ namespace EcflowUtil {
 class EcflowClientWrapperPrivate {
 public:
     EcflowClientWrapperPrivate(std::string host, std::string port) :
-        host_{host}, port_{port} {}
+        host_{host}, port_{port} {
+        invoker_.set_throw_on_error(false);
+    }
 
     void setConnectTimeout(int time_out) {
         invoker_.set_connect_timeout(time_out);
