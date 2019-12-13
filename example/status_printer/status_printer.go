@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/perillaroc/ecflow-client-go"
+	"github.com/nwpc-oper/ecflow-client-go"
 	"log"
 	"os"
 )
