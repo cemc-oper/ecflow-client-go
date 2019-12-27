@@ -26,7 +26,7 @@ public:
         return status_records_;
     }
 
-    std::string statusRecordsJson();
+    const char* statusRecordsJson();
 
     std::string errorMessage();
 

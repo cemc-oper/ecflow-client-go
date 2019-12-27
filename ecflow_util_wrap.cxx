@@ -447,13 +447,13 @@ std::vector< EcflowUtil::NodeStatusRecord > *_wrap_EcflowClientWrapper_statusRec
 
 _gostring_ _wrap_EcflowClientWrapper_statusRecordsJson_ecflow_client_149cbf1b1d6d7ca4(EcflowUtil::EcflowClientWrapper *_swig_go_0) {
   EcflowUtil::EcflowClientWrapper *arg1 = (EcflowUtil::EcflowClientWrapper *) 0 ;
-  std::string result;
+  char *result = 0 ;
   _gostring_ _swig_go_result;
   
   arg1 = *(EcflowUtil::EcflowClientWrapper **)&_swig_go_0; 
   
-  result = (arg1)->statusRecordsJson();
-  _swig_go_result = Swig_AllocateString((&result)->data(), (&result)->length()); 
+  result = (char *)(arg1)->statusRecordsJson();
+  _swig_go_result = Swig_AllocateString((char*)result, result ? strlen((char*)result) : 0); 
   return _swig_go_result;
 }
 
