@@ -87,7 +87,7 @@ int EcflowClientWrapper::sync() {
     return 0;
 }
 
-const char* EcflowClientWrapper::statusRecordsJson() {
+std::string EcflowClientWrapper::statusRecordsJson() {
     json records_json = json::array();
     for(auto &record: status_records_) {
         json record_json;
@@ -95,7 +95,7 @@ const char* EcflowClientWrapper::statusRecordsJson() {
         record_json["status"] = record.status_;
         records_json.push_back(record_json);
     }
-    return records_json.dump().c_str();
+    return records_json.dump();
 }
 
 std::string EcflowClientWrapper::errorMessage() {
