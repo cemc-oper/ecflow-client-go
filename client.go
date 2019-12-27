@@ -52,6 +52,11 @@ func (c *EcflowClient) StatusRecordsJson() string {
 	return recordsJson
 }
 
+func (c *EcflowClient) StatusRecordsJsonChar() string {
+	recordsJson := c.wrapper.StatusRecordsJsonChar()
+	return recordsJson
+}
+
 func (c *EcflowClient) Close() {
 	DeleteEcflowClientWrapper(c.wrapper)
 	c.wrapper = nil
