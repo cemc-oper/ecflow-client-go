@@ -26,6 +26,8 @@ public:
         return status_records_;
     }
 
+    std::string statusRecordsJson();
+
     std::string errorMessage();
 
 private:

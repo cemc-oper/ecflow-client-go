@@ -1,8 +1,11 @@
 #include "ecflow_util.h"
+#include "json.hpp"
 
 #include <ClientInvoker.hpp>
 #include <Defs.hpp>
 //#include <DState.hpp>
+
+using json = nlohmann::json;
 
 namespace EcflowUtil {
 
@@ -82,6 +85,17 @@ int EcflowClientWrapper::sync() {
     }
     status_records_ = p_->collectStatus();
     return 0;
+}
+
+std::string EcflowClientWrapper::statusRecordsJson() {
+    json records_json = json::array();
+    for(auto &record: status_records_) {
+        json record_json;
+        record_json["path"] = record.path_;
+        record_json["status"] = record.status_;
+        records_json.push_back(record_json);
+    }
+    return records_json.dump();
 }
 
 std::string EcflowClientWrapper::errorMessage() {
