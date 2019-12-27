@@ -47,9 +47,9 @@ func (c *EcflowClient) StatusRecords() []StatusRecord {
 	return returnRecords
 }
 
-func (c *EcflowClient) StatusRecordsJson() []byte {
+func (c *EcflowClient) StatusRecordsJson() string {
 	recordsJson := c.wrapper.StatusRecordsJson()
-	return []byte(recordsJson)
+	return recordsJson
 }
 
 func (c *EcflowClient) Close() {
