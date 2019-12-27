@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"github.com/nwpc-oper/ecflow-client-go"
@@ -31,7 +32,13 @@ func main() {
 		log.Fatal("sync has error")
 	}
 
-	records := client.StatusRecordsJson()
+	recordsJson := client.StatusRecordsJson()
+	var records []ecflow_client.StatusRecord
+	err = json.Unmarshal([]byte(recordsJson), &records)
+	if err != nil {
+		fmt.Printf("This is some error: %v\n", err)
+		return
+	}
 	for _, record := range records {
 		fmt.Fprintf(target, "%s %s\n", record.Path, record.Status)
 	}

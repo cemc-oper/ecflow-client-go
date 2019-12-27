@@ -1,8 +1,6 @@
 package ecflow_client
 
 import (
-	"encoding/json"
-	"fmt"
 	"time"
 )
 
@@ -49,15 +47,9 @@ func (c *EcflowClient) StatusRecords() []StatusRecord {
 	return returnRecords
 }
 
-func (c *EcflowClient) StatusRecordsJson() []StatusRecord {
+func (c *EcflowClient) StatusRecordsJson() []byte {
 	recordsJson := c.wrapper.StatusRecordsJson()
-	var records []StatusRecord
-	err := json.Unmarshal([]byte(recordsJson), &records)
-	if err != nil {
-		fmt.Printf("This is some error: %v\n", err)
-		return nil
-	}
-	return records
+	return []byte(recordsJson)
 }
 
 func (c *EcflowClient) Close() {
