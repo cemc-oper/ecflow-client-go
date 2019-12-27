@@ -27,6 +27,7 @@ public:
     }
 
     std::string statusRecordsJson();
+    const char* statusRecordsJsonChar();
 
     std::string errorMessage();
 

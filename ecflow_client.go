@@ -36,10 +36,11 @@ typedef _gostring_ swig_type_5;
 typedef _gostring_ swig_type_6;
 typedef _gostring_ swig_type_7;
 typedef _gostring_ swig_type_8;
-typedef long long swig_type_9;
+typedef _gostring_ swig_type_9;
 typedef long long swig_type_10;
 typedef long long swig_type_11;
 typedef long long swig_type_12;
+typedef long long swig_type_13;
 extern void _wrap_Swig_free_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern uintptr_t _wrap_Swig_malloc_ecflow_client_149cbf1b1d6d7ca4(swig_intgo arg1);
 extern void _wrap_NodeStatusRecord_path__set_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_1 arg2);
@@ -54,13 +55,14 @@ extern void _wrap_EcflowClientWrapper_setConnectTimeout_ecflow_client_149cbf1b1d
 extern swig_intgo _wrap_EcflowClientWrapper_sync_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern uintptr_t _wrap_EcflowClientWrapper_statusRecords_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern swig_type_7 _wrap_EcflowClientWrapper_statusRecordsJson_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
-extern swig_type_8 _wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_8 _wrap_EcflowClientWrapper_statusRecordsJsonChar_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_9 _wrap_EcflowClientWrapper_errorMessage_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_0_ecflow_client_149cbf1b1d6d7ca4(void);
-extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(swig_type_9 arg1);
+extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(swig_type_10 arg1);
 extern uintptr_t _wrap_new_NodeStatusRecordVector__SWIG_2_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
-extern swig_type_10 _wrap_NodeStatusRecordVector_size_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
-extern swig_type_11 _wrap_NodeStatusRecordVector_capacity_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
-extern void _wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_12 arg2);
+extern swig_type_11 _wrap_NodeStatusRecordVector_size_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern swig_type_12 _wrap_NodeStatusRecordVector_capacity_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
+extern void _wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, swig_type_13 arg2);
 extern _Bool _wrap_NodeStatusRecordVector_isEmpty_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern void _wrap_NodeStatusRecordVector_clear_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1);
 extern void _wrap_NodeStatusRecordVector_add_ecflow_client_149cbf1b1d6d7ca4(uintptr_t arg1, uintptr_t arg2);
@@ -234,6 +236,16 @@ func (arg1 SwigcptrEcflowClientWrapper) StatusRecordsJson() (_swig_ret string) {
 	return swig_r_1
 }
 
+func (arg1 SwigcptrEcflowClientWrapper) StatusRecordsJsonChar() (_swig_ret string) {
+	var swig_r string
+	_swig_i_0 := arg1
+	swig_r_p := C._wrap_EcflowClientWrapper_statusRecordsJsonChar_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0))
+	swig_r = *(*string)(unsafe.Pointer(&swig_r_p))
+	var swig_r_1 string
+	swig_r_1 = swigCopyString(swig_r)
+	return swig_r_1
+}
+
 func (arg1 SwigcptrEcflowClientWrapper) ErrorMessage() (_swig_ret string) {
 	var swig_r string
 	_swig_i_0 := arg1
@@ -251,6 +263,7 @@ type EcflowClientWrapper interface {
 	Sync() (_swig_ret int)
 	StatusRecords() (_swig_ret NodeStatusRecordVector)
 	StatusRecordsJson() (_swig_ret string)
+	StatusRecordsJsonChar() (_swig_ret string)
 	ErrorMessage() (_swig_ret string)
 }
 
@@ -272,7 +285,7 @@ func NewNodeStatusRecordVector__SWIG_0() (_swig_ret NodeStatusRecordVector) {
 func NewNodeStatusRecordVector__SWIG_1(arg1 int64) (_swig_ret NodeStatusRecordVector) {
 	var swig_r NodeStatusRecordVector
 	_swig_i_0 := arg1
-	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(C.swig_type_9(_swig_i_0))))
+	swig_r = (NodeStatusRecordVector)(SwigcptrNodeStatusRecordVector(C._wrap_new_NodeStatusRecordVector__SWIG_1_ecflow_client_149cbf1b1d6d7ca4(C.swig_type_10(_swig_i_0))))
 	return swig_r
 }
 
@@ -318,7 +331,7 @@ func (arg1 SwigcptrNodeStatusRecordVector) Capacity() (_swig_ret int64) {
 func (arg1 SwigcptrNodeStatusRecordVector) Reserve(arg2 int64) {
 	_swig_i_0 := arg1
 	_swig_i_1 := arg2
-	C._wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_type_12(_swig_i_1))
+	C._wrap_NodeStatusRecordVector_reserve_ecflow_client_149cbf1b1d6d7ca4(C.uintptr_t(_swig_i_0), C.swig_type_13(_swig_i_1))
 }
 
 func (arg1 SwigcptrNodeStatusRecordVector) IsEmpty() (_swig_ret bool) {

@@ -98,6 +98,10 @@ std::string EcflowClientWrapper::statusRecordsJson() {
     return records_json.dump();
 }
 
+const char* EcflowClientWrapper::statusRecordsJsonChar() {
+    return statusRecordsJson().c_str();
+}
+
 std::string EcflowClientWrapper::errorMessage() {
     return p_->error_message_;
 }
