@@ -1,17 +1,16 @@
 package ecflow_client
 
-import "time"
+import (
+	"encoding/json"
+	"fmt"
+	"time"
+)
 
 type EcflowClient struct {
 	ServerHost    string
 	ServerPort    string
 	CollectedTime time.Time
 	wrapper       EcflowClientWrapper
-}
-
-type StatusRecord struct {
-	Path   string `json:"path"`
-	Status string `json:"status"`
 }
 
 func CreateEcflowClient(host string, port string) *EcflowClient {
@@ -48,6 +47,17 @@ func (c *EcflowClient) StatusRecords() []StatusRecord {
 		})
 	}
 	return returnRecords
+}
+
+func (c *EcflowClient) StatusRecordsJson() []StatusRecord {
+	recordsJson := c.wrapper.StatusRecordsJson()
+	var records []StatusRecord
+	err := json.Unmarshal([]byte(recordsJson), &records)
+	if err != nil {
+		fmt.Printf("This is some error: %v\n", err)
+		return nil
+	}
+	return records
 }
 
 func (c *EcflowClient) Close() {
