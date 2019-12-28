@@ -5,6 +5,8 @@
 #include <Defs.hpp>
 //#include <DState.hpp>
 
+#include <cstring>
+
 using json = nlohmann::json;
 
 namespace EcflowUtil {
@@ -96,10 +98,6 @@ std::string EcflowClientWrapper::statusRecordsJson() {
         records_json.push_back(record_json);
     }
     return records_json.dump();
-}
-
-const char* EcflowClientWrapper::statusRecordsJsonChar() {
-    return statusRecordsJson().c_str();
 }
 
 std::string EcflowClientWrapper::errorMessage() {

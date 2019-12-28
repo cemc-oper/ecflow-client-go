@@ -45,7 +45,7 @@ func main() {
 				log.Fatal("sync has error")
 			}
 
-			recordsJson := client.StatusRecordsJsonChar()
+			recordsJson := client.StatusRecordsJson()
 			var records []ecflow_client.StatusRecord
 			err = json.Unmarshal([]byte(recordsJson), &records)
 			if err != nil {
